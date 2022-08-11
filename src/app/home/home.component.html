@@ -1,0 +1,65 @@
+<div class="site h-screen">
+  <div class="site-main flex flex-col md:flex-row bg-blue-50">
+    <div class="site-main__text w-full md:w-3/5 mt-10 md:mt-40">
+      <div class="container mx-auto w-full px-6 md:px-20">
+        <h1 style="font-family: 'Poppins', sans-serif;"
+          class="site-main__title font-sans text-2xl leading- md:text-5xl text-slate-900 font-extrabold">Software
+          Developer, I
+          am
+          <span class="text-blue-600">passionate</span>
+          about IT.
+        </h1>
+        <div class="site-main__content py-5 md:py-10">
+          <p style="font-family: 'Inter', sans-serif;" class="leading-7 font-normal text-xs md:text-lg">I’m Abba Sali, a
+            Cameroonian Software Developer with
+            over three years of
+            experience. I
+            specialise in
+            JavaScript, Flutter, NodeJS, NestJS, NuxtJS, SQL and NoSQL databases, HTML(5), CSS(3), Tailwind, agile SCRUM
+            development methodologies.</p>
+          <p style="font-family: 'Inter', sans-serif;"
+            class="pt-3 pb-1 md:pt-6 md:pb-3 leading-7 font-normal text-xs md:text-lg">I'm also a big fan of
+            open-source. I contribute to open-source projects and enjoy participating in the GDG.</p>
+        </div>
+        <div class="site-main__socials flex">
+          <ul class="flex items-center flex-col md:flex-row justify-center md:justify-start w-full">
+            <div class="flex items-center">
+              <li class="w-6 h-6 mr-4" *ngFor="let social of socials">
+                <a href="{{social.link}}"><img src="{{social.img}}" /></a>
+              </li>
+            </div>
+            <div class="bg-slate-900 py-2 mt-3 md:mt-0 px-4 rounded-full mr-10"><span
+                class="text-white text-xs md:text-sm font-semibold">e-mail
+                Envoyez-moi
+                un
+                e-mail</span>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="site-main__picture mt-10 md:mt-0 h-2/5 md:h-screen w-full bg-blue-200 md:w-2/5">
+      <img src="/assets/pictures/profile.jpg" class="h-full object-cover w-auto" alt="">
+    </div>
+  </div>
+  <div class="site-approved mt-6 md:mt-20">
+    <div class="container mx-auto">
+      <h1 style="font-family: 'Poppins', sans-serif;" class="site-approved__title text-center md:text-3xl text-base">
+        Approved by awesome developers & companies</h1>
+      <h4 style="font-family: 'Poppins', sans-serif;"
+        class="site-approved__subtitle text-center text-sm px-10 md:px-0 py-2 md:text-base">Some companies that I have
+        worked
+        with
+        and
+        who have
+        trusted me.
+      </h4>
+      <div class="flex flex-col md:flex-row mb-10 items-center justify-between w-full md:w-9/12 mx-auto">
+        <ul><img src="/assets/pictures/oss-cameroun.png" class="h-12 w-full md:w-auto object-contain" alt=""></ul>
+        <ul><img src="/assets/pictures/ldt.png" class="h-24 w-full md:w-auto object-contain" alt=""></ul>
+        <ul><img src="/assets/pictures/mokine.jpg" class="h-14 w-full md:w-auto object-contain" alt=""></ul>
+        <ul><img src="/assets/pictures/vetch.png" class="h-24 w-full md:w-auto object-contain" alt=""></ul>
+      </div>
+    </div>
+  </div>
+</div>
